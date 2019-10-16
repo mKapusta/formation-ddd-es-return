@@ -58,4 +58,6 @@ public class DecisionProjection {
     public Set<ProductId> getProductsId() {
         return selectProduct.stream().map(product -> product.productId).collect(Collectors.toSet());
     }
+
+
 }

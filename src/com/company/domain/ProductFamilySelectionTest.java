@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ProductFamilySelectionTest {
 
+    // TODO : Surcharger le equals des events
     @Test
     public void selectProduct_returnsProductSelected() {
         ProductFamilySelection productFamilySelection = new ProductFamilySelection();
@@ -40,7 +41,6 @@ public class ProductFamilySelectionTest {
     public void selectProduct_returnsProductDataRequested_whenMissingData() {
         ProductFamilySelection productFamilySelection = new ProductFamilySelection();
         ProductId productId = new ProductId("id");
-        //FIXME : PAS NULL
         SelectProductCommand selectProductCommand = new SelectProductCommand(productId, Optional.empty(), Optional.empty());
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
@@ -117,15 +117,18 @@ public class ProductFamilySelectionTest {
 
     @Test
     public void confirmFamilySelection_returnsNothing_whenNoFullProductSelected() {
-        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(new ProductId("a"))));
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(
+                new ProductSelected(new ProductId("a"))));
         assertTrue(productFamilySelection.confirmFamilySelection(new ConfirmFamilySelection()).isEmpty());
     }
 
     @Test
     public void confirmFamilySelection_returnsProductsFamilyDefined_whenProductDataReceived() {
         ProductId productId = new ProductId("a");
-        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(productId),
-                new ProductDataRequested(productId), new ProductDataReceived(productId, new ProductName("name"), new ProductPicture("picture")) ));
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(
+                new ProductSelected(productId),
+                new ProductDataRequested(productId),
+                new ProductDataReceived(productId, new ProductName("name"), new ProductPicture("picture")) ));
         Optional<ProductFamilyDefined> productFamilyDefined = productFamilySelection.confirmFamilySelection(new ConfirmFamilySelection());
         assertTrue(productFamilyDefined.isPresent());
         assertEquals(Set.of(productId),productFamilyDefined.get().productsId);

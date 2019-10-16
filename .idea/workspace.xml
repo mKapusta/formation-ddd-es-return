@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d58890-6226-4a50-ba90-ae54e2a1185c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/infra/DashboardProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/SelectProductCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/SelectProductCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +20,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="226">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
@@ -30,28 +43,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductSelected.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ReceiveProductData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="45" column="73" lean-forward="true" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+            <state relative-caret-position="542">
+              <caret line="121" column="102" selection-start-line="121" selection-start-column="95" selection-end-line="121" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="323">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="452">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#807#808#0" expanded="true" />
@@ -88,54 +83,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyDefined.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ProductPicture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ProductName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="e#132#133#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="315">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#232#233#0" expanded="true" />
@@ -149,6 +100,61 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+              <folding>
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../Logiciels/jdk-11.0.2/lib/src.zip!/java.base/java/util/Set.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3684">
+              <caret line="465" column="22" selection-start-line="465" selection-start-column="22" selection-end-line="465" selection-end-column="22" />
+              <folding>
+                <element signature="e#20154#20155#0" expanded="true" />
+                <element signature="e#20213#20214#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyDefined.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -156,6 +162,7 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -191,11 +198,16 @@
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ReceiveProductData.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ProductPicture.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ProductName.java" />
-        <option value="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyDefined.java" />
-        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/DecisionHistoryProjection.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/DashboardProjection.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/ProductFamily.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/DashboardProjection.java" />
       </list>
     </option>
   </component>
@@ -252,7 +264,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SupportCom" type="b2602c69:ProjectViewProjectNode" />
@@ -260,8 +272,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="infra" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,7 +287,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571235167321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571239259606" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -286,6 +297,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company.infra" />
+      <recent name="com.company.domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.domain" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -309,100 +324,102 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductFamilySelectionTest">
-    <configuration name="ProductFamilySelectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DashboardProjectionTest">
+    <configuration name="DashboardProjectionTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.domain.event.*" />
+          <option name="PATTERN" value="com.company.infra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.company.domain.ProductFamilySelectionTest" />
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.company.infra.DashboardProjectionTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardProjectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SupportCom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductFamilySelectionTest.confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashboardProjectionTest.shouldGetOneFamily" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.domain.event.*" />
+          <option name="PATTERN" value="com.company.infra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.company.domain.ProductFamilySelectionTest" />
-      <option name="METHOD_NAME" value="confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected" />
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
+      <option name="METHOD_NAME" value="shouldGetOneFamily" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductFamilySelectionTest.receiveProductData_returnsProductDataReceived" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.domain.*" />
+          <option name="PATTERN" value="com.company.infra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.company.domain.ProductFamilySelectionTest" />
-      <option name="METHOD_NAME" value="receiveProductData_returnsProductDataReceived" />
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
+      <option name="METHOD_NAME" value="shouldRemoveProductFromOneFamilyAmongTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashboardProjectionTest.startsWithEmptyDashboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.domain.*" />
+          <option name="PATTERN" value="com.company.infra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.company.domain.ProductFamilySelectionTest" />
-      <option name="METHOD_NAME" value="selectProduct_returnsProductDataRequested_whenMissingData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductFamilySelectionTest.unselectProduct_returnsProductUnSelected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SupportCom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.company.domain.ProductFamilySelectionTest" />
-      <option name="METHOD_NAME" value="unselectProduct_returnsProductUnSelected" />
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
+      <option name="METHOD_NAME" value="startsWithEmptyDashboard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProductFamilySelectionTest" />
-      <item itemvalue="JUnit.ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" />
-      <item itemvalue="JUnit.ProductFamilySelectionTest.confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected" />
-      <item itemvalue="JUnit.ProductFamilySelectionTest.unselectProduct_returnsProductUnSelected" />
-      <item itemvalue="JUnit.ProductFamilySelectionTest.receiveProductData_returnsProductDataReceived" />
+      <item itemvalue="JUnit.DashboardProjectionTest.startsWithEmptyDashboard" />
+      <item itemvalue="JUnit.DashboardProjectionTest" />
+      <item itemvalue="JUnit.DashboardProjectionTest.shouldGetOneFamily" />
+      <item itemvalue="JUnit.DashboardProjectionTest (1)" />
+      <item itemvalue="JUnit.DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductFamilySelectionTest" />
-        <item itemvalue="JUnit.ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" />
-        <item itemvalue="JUnit.ProductFamilySelectionTest.receiveProductData_returnsProductDataReceived" />
-        <item itemvalue="JUnit.ProductFamilySelectionTest.confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected" />
-        <item itemvalue="JUnit.ProductFamilySelectionTest.unselectProduct_returnsProductUnSelected" />
+        <item itemvalue="JUnit.DashboardProjectionTest" />
+        <item itemvalue="JUnit.DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" />
+        <item itemvalue="JUnit.DashboardProjectionTest (1)" />
+        <item itemvalue="JUnit.DashboardProjectionTest.shouldGetOneFamily" />
+        <item itemvalue="JUnit.DashboardProjectionTest.startsWithEmptyDashboard" />
       </list>
     </recent_temporary>
   </component>
@@ -416,44 +433,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571217022660</updated>
-      <workItem from="1571217026975" duration="13451000" />
+      <workItem from="1571217026975" duration="17491000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 16h 00m 18s.xml">
-      <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest_shouldGetOneFamily - 2019.10.16 at 16h 59m 41s.xml">
+      <configuration name="DashboardProjectionTest.shouldGetOneFamily" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest_unselectProduct_returnsProductUnSelected - 2019.10.16 at 16h 01m 19s.xml">
-      <configuration name="ProductFamilySelectionTest.unselectProduct_returnsProductUnSelected" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 00m 37s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest_confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected - 2019.10.16 at 16h 04m 51s.xml">
-      <configuration name="ProductFamilySelectionTest.confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 01m 32s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 16h 05m 13s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 13m 32s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest_receiveProductData_returnsProductDataReceived - 2019.10.16 at 16h 06m 32s.xml">
-      <configuration name="ProductFamilySelectionTest.receiveProductData_returnsProductDataReceived" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest_(1) - 2019.10.16 at 17h 15m 54s.xml">
+      <configuration name="DashboardProjectionTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 16h 07m 36s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest_(1) - 2019.10.16 at 17h 16m 46s.xml">
+      <configuration name="DashboardProjectionTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 16h 10m 23s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 17m 34s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 16h 11m 28s.xml">
-      <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest_shouldRemoveProductFromOneFamilyAmongTwo - 2019.10.16 at 17h 17m 46s.xml">
+      <configuration name="DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 16h 11m 33s.xml">
-      <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 17m 58s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 16h 12m 45s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 20m 19s.xml">
+      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13451000" />
+    <option name="totallyTimeSpent" value="17491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,7 +490,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32827735" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -483,11 +500,11 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5092091" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5092091" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.37623763" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Maven" />
@@ -496,23 +513,11 @@
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.28202045" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -529,13 +534,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -560,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -607,13 +598,6 @@
             <element signature="e#232#233#0" expanded="true" />
             <element signature="e#274#275#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Logiciels/jdk-11.0.2/lib/src.zip!/java.base/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="252" column="12" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -660,10 +644,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ReceiveProductData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/ProductFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="27" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Logiciels/jdk-11.0.2/lib/src.zip!/java.base/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3684">
+          <caret line="465" column="22" selection-start-line="465" selection-start-column="22" selection-end-line="465" selection-end-column="22" />
+          <folding>
+            <element signature="e#20154#20155#0" expanded="true" />
+            <element signature="e#20213#20214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="121" column="102" selection-start-line="121" selection-start-column="95" selection-end-line="121" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
@@ -676,67 +747,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyDefined.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ReceiveProductData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="45" column="73" lean-forward="true" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+        <state relative-caret-position="134">
+          <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="317">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
           </folding>
         </state>
       </provider>
