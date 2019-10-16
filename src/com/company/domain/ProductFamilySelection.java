@@ -33,12 +33,13 @@ public class ProductFamilySelection {
         ProductSelected event = new ProductSelected(command.productId);
         decisionProjection.apply(event);
         events.add(event);
-        if (!command.isFull()) {
-            ProductDataRequested productDataRequested = new ProductDataRequested(command.productId);
+        Product product = new Product(command.productId, command.productName, command.productPicture);
+        if (!product.isFull()) {
+            ProductDataRequested productDataRequested = new ProductDataRequested(product.productId);
             events.add(productDataRequested);
             decisionProjection.apply(productDataRequested);
         }else {
-            ProductDataReceived productDataReceived = new ProductDataReceived(command.productId, command.productName, command.productPicture);
+            ProductDataReceived productDataReceived = new ProductDataReceived(product.productId, product.productName.get(), product.productPicture.get());
             events.add(productDataReceived);
             decisionProjection.apply(productDataReceived);
         }

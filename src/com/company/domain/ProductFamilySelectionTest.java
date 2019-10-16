@@ -15,14 +15,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ProductFamilySelectionTest {
 
-    //TODO : tester attributs events
     @Test
     public void selectProduct_returnsProductSelected() {
         ProductFamilySelection productFamilySelection = new ProductFamilySelection();
         ProductId productId = new ProductId("id");
         ProductName productName = new ProductName("name");
         ProductPicture productPicture = new ProductPicture("picture");
-        SelectProductCommand selectProductCommand = new SelectProductCommand(productId, productName, productPicture);
+        SelectProductCommand selectProductCommand = new SelectProductCommand(productId, Optional.of(productName), Optional.of(productPicture));
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
         assertEquals(ProductSelected.class,events.get(0).getClass());
@@ -35,14 +34,14 @@ public class ProductFamilySelectionTest {
 
 
     private SelectProductCommand createSelectProductCommand(String id){
-       return new SelectProductCommand(new ProductId(id), new ProductName("name"), new ProductPicture("picture"));
+       return new SelectProductCommand(new ProductId(id), Optional.of(new ProductName("name")), Optional.of(new ProductPicture("picture")));
     }
     @Test
     public void selectProduct_returnsProductDataRequested_whenMissingData() {
         ProductFamilySelection productFamilySelection = new ProductFamilySelection();
         ProductId productId = new ProductId("id");
         //FIXME : PAS NULL
-        SelectProductCommand selectProductCommand = new SelectProductCommand(productId, null, null);
+        SelectProductCommand selectProductCommand = new SelectProductCommand(productId, Optional.empty(), Optional.empty());
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
         assertEquals(ProductDataRequested.class,events.get(1).getClass());
