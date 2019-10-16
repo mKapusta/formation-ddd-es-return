@@ -90,6 +90,14 @@ public class ProductFamilySelectionTest {
 
 
     @Test
+    public void receiveProductData_returnsProductDataReceived(){
+        ProductId productId = new ProductId("A");
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(productId), new ProductDataRequested(productId)));
+
+        assertTrue(productFamilySelection.receiveData(new ReceiveProductData(productId, new ProductName("name"), new ProductPicture("picture"))).isPresent());
+    }
+
+    @Test
     public void confirmFamilySelection_returnsNothing_whenNoFullProductSelected() {
         ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(new ProductId("a"))));
         assertTrue(productFamilySelection.confirmFamilySelection(new ConfirmFamilySelection()).isEmpty());

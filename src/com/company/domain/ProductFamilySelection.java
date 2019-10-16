@@ -2,6 +2,7 @@ package com.company.domain;
 
 import com.company.domain.command.ConfirmFamilySelection;
 import com.company.domain.command.ProductUnselected;
+import com.company.domain.command.ReceiveProductData;
 import com.company.domain.command.SelectProductCommand;
 import com.company.domain.event.*;
 
@@ -65,5 +66,11 @@ public class ProductFamilySelection {
 
     public boolean selectProductContainsProduct(ProductId productId){
         return decisionProjection.selectProductContainsProduct(productId);
+    }
+
+    public Optional<ProductDataReceived> receiveData(ReceiveProductData receiveProductData) {
+        ProductDataReceived productDataReceived = new ProductDataReceived(receiveProductData.productId, receiveProductData.productName, receiveProductData.productPicture);
+        decisionProjection.apply(productDataReceived);
+        return Optional.of(productDataReceived);
     }
 }
