@@ -23,8 +23,8 @@ public class ProductFamilySelectionTest {
         SelectProductCommand selectProductCommand = new SelectProductCommand(productId, new ProductName("name"), new ProductPicture("picture"));
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
-        assertEquals(ProductSelected.class,events.get(1).getClass());
-        assertEquals(ProductDataReceived.class,events.get(0).getClass());
+        assertEquals(ProductSelected.class,events.get(0).getClass());
+        assertEquals(ProductDataReceived.class,events.get(1).getClass());
     }
 
 
@@ -39,16 +39,15 @@ public class ProductFamilySelectionTest {
         SelectProductCommand selectProductCommand = new SelectProductCommand(productId, null, null);
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
-        assertEquals(ProductDataRequested.class,events.get(0).getClass());
-        assertEquals(ProductSelected.class,events.get(1).getClass());
+        assertEquals(ProductDataRequested.class,events.get(1).getClass());
+        assertEquals(ProductSelected.class,events.get(0).getClass());
     }
 
     @Test
     public void unselectProduct_returnsProductUnSelected() {
-        ProductFamilySelection productFamilySelection = new ProductFamilySelection();
+
         ProductId productId = new ProductId("id");
-        SelectProductCommand selectProductCommand = createSelectProductCommand("id");
-        productFamilySelection.selectProduct(selectProductCommand);
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(productId)));
         ProductUnselected productUnselectedCommand = new ProductUnselected(productId);
 
 
@@ -87,6 +86,13 @@ public class ProductFamilySelectionTest {
 
         assertTrue(productFamilySelection.confirmFamilySelection(new ConfirmFamilySelection()).isEmpty());
 
+    }
+
+
+    @Test
+    public void confirmFamilySelection_returnsNothing_whenNoFullProductSelected() {
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(new ProductId("a"))));
+        assertTrue(productFamilySelection.confirmFamilySelection(new ConfirmFamilySelection()).isEmpty());
     }
 
 

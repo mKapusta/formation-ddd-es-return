@@ -25,23 +25,23 @@ public class ProductFamilySelection {
 
 
     public List<ProductFamilyEvent> selectProduct(SelectProductCommand command) {
+        if (decisionProjection.selectProductContainsProduct(command.productId)) {
+            return List.of();
+        }
         List<ProductFamilyEvent> events = new ArrayList<>();
+        ProductSelected event = new ProductSelected(command.productId);
+        decisionProjection.apply(event);
+        events.add(event);
         if (!command.isFull()) {
             ProductDataRequested productDataRequested = new ProductDataRequested(command.productId);
             events.add(productDataRequested);
             decisionProjection.apply(productDataRequested);
-        }else{
+        }else {
             ProductDataReceived productDataReceived = new ProductDataReceived(command.productId, command.productName, command.productPicture);
             events.add(productDataReceived);
             decisionProjection.apply(productDataReceived);
         }
 
-        if (decisionProjection.selectProductContainsProduct(command.productId)) {
-            return List.of();
-        }
-        ProductSelected event = new ProductSelected(command.productId);
-        decisionProjection.apply(event);
-        events.add(event);
         return events;
     }
 
@@ -55,7 +55,7 @@ public class ProductFamilySelection {
     }
 
     public Optional<ProductFamilyDefined> confirmFamilySelection(ConfirmFamilySelection confirmFamilySelectionCommand) {
-        if (decisionProjection.isEmpty()) {
+        if (decisionProjection.isEmpty() || !decisionProjection.allProductsFull()) {
             return Optional.empty();
         }
         ProductFamilyDefined event = new ProductFamilyDefined();

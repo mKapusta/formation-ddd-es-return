@@ -2,10 +2,7 @@ package com.company.domain;
 
 import com.company.domain.event.*;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Consumer;
 
 public class DecisionProjection {
@@ -42,9 +39,16 @@ public class DecisionProjection {
     }
 
     public void apply(ProductDataReceived productDataReceived) {
+        Product fullProduct = new Product(productDataReceived.productId, Optional.of(productDataReceived.productName), Optional.of(productDataReceived.productPicture));
+        selectProduct.remove(fullProduct);
+        selectProduct.add(fullProduct);
     }
 
     public boolean isEmpty() {
         return selectProduct.isEmpty();
+    }
+
+    public boolean allProductsFull(){
+        return selectProduct.stream().anyMatch(Product::isFull);
     }
 }
