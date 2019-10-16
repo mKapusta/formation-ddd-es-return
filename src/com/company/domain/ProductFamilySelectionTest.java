@@ -60,10 +60,8 @@ public class ProductFamilySelectionTest {
 
     @Test
     public void unselectProduct_returnsNothingWhenDifferentProduct() {
-        ProductFamilySelection productFamilySelection = new ProductFamilySelection();
         ProductId productIdA = new ProductId("A");
-        SelectProductCommand selectProductCommand = createSelectProductCommand("A");
-        productFamilySelection.selectProduct(selectProductCommand);
+        ProductFamilySelection productFamilySelection = new ProductFamilySelection(List.of(new ProductSelected(productIdA)));
 
         ProductId productIdB = new ProductId("B");
         ProductUnselected productUnselectedCommand = new ProductUnselected(productIdB);
@@ -73,15 +71,6 @@ public class ProductFamilySelectionTest {
 
     }
 
-    @Test
-    public void buildAggregateFromHistory_returnsAggregate(){
-
-        ProductId productId = new ProductId("A");
-        List<ProductFamilyEvent> events = List.of(new ProductSelected(productId));
-        ProductFamilySelection productFamilySelection = new ProductFamilySelection(events);
-
-        assertTrue(productFamilySelection.selectProduct.contains(new Product(new ProductId("A"))));
-    }
 
     @Test
     public void confirmFamilySelection_returnsProductFamilyDefined_whenProductSelected() {
