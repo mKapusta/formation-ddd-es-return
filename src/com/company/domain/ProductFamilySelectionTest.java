@@ -80,7 +80,7 @@ public class ProductFamilySelectionTest {
         List<ProductFamilyEvent> events = List.of(new ProductSelected(productId));
         ProductFamilySelection productFamilySelection = new ProductFamilySelection(events);
 
-        assertTrue(productFamilySelection.selectProduct.contains(new ProductId("A")));
+        assertTrue(productFamilySelection.selectProduct.contains(new Product(new ProductId("A"))));
     }
 
     @Test

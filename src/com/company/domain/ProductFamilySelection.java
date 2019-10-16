@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 public class ProductFamilySelection {
 
 
-    public Set<ProductId> selectProduct = new HashSet<>();
+    public Set<Product> selectProduct = new HashSet<>();
     private Map<Class, Consumer<ProductFamilyEvent>> eventClassMapping = Map.of(ProductSelected.class, event -> apply((ProductSelected) event),
             com.company.domain.event.ProductUnselected.class, event -> apply((com.company.domain.event.ProductUnselected) event));
 
@@ -24,7 +24,7 @@ public class ProductFamilySelection {
     }
 
     private void apply(ProductSelected productSelected) {
-        selectProduct.add(productSelected.productId);
+        selectProduct.add(new Product(productSelected.productId));
     }
 
     private void apply(com.company.domain.event.ProductUnselected productUnselected) {
@@ -62,7 +62,7 @@ public class ProductFamilySelection {
     }
 
     public Optional<com.company.domain.event.ProductUnselected> unselectProduct(ProductUnselected productUnselectedCommand) {
-        if (!selectProduct.contains(productUnselectedCommand.productId)) {
+        if (!selectProduct.contains(new Product(productUnselectedCommand.productId))) {
             return Optional.empty();
         }
         com.company.domain.event.ProductUnselected event = new com.company.domain.event.ProductUnselected(productUnselectedCommand.productId);

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d58890-6226-4a50-ba90-ae54e2a1185c" name="Default Changelist" comment="" />
+    <list default="true" id="b5d58890-6226-4a50-ba90-ae54e2a1185c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/ProductFamilySelectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/ConfirmFamilySelectionCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/ProductDataReceivedCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/ProductUnselectedCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/SelectProductCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SupportCom/com/company/domain/command/SelectProductCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +25,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="152">
+              <caret line="64" column="84" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#399#400#0" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductSelected.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="80" column="71" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+            <state relative-caret-position="219">
+              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductDataRequested.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#232#233#0" expanded="true" />
                 <element signature="e#274#275#0" expanded="true" />
@@ -87,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="118">
+              <caret line="8" column="47" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="47" />
               <folding>
                 <element signature="e#578#579#0" expanded="true" />
               </folding>
@@ -104,19 +139,6 @@
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ProductPicture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,6 +160,9 @@
       <find>, null, null</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -154,13 +179,13 @@
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ProductPicture.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ProductName.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/ProductDataRequested.java" />
-        <option value="$PROJECT_DIR$/src/com/company/domain/Product.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/ProductDataReceivedCommand.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/event/ProductDataRequested.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/event/ProductDataReceived.java" />
-        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/Product.java" />
+        <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" />
       </list>
     </option>
   </component>
@@ -169,6 +194,7 @@
     <option name="width" value="1289" />
     <option name="height" value="716" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -240,7 +266,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571230940311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571231668448" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -365,8 +391,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductFamilySelectionTest" />
-        <item itemvalue="JUnit.ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" />
         <item itemvalue="JUnit.ProductFamilySelectionTest.buildAggregateFromHistory_returnsAggregate" />
+        <item itemvalue="JUnit.ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" />
         <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.company.domain.ProductFamilySelectionTest]" />
         <item itemvalue="JUnit.ProductFamilySelectionTest.unselectProduct_returnsNothingWhenDifferentProduct" />
       </list>
@@ -382,26 +408,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571217022660</updated>
-      <workItem from="1571217026975" duration="9485000" />
+      <workItem from="1571217026975" duration="9955000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 14h 01m 33s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 14h 01m 56s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 14h 11m 10s.xml">
-      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 14h 14m 27s.xml">
-      <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 14h 15m 13s.xml">
-      <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductFamilySelectionTest_selectProduct_returnsProductDataRequested_whenMissingData - 2019.10.16 at 14h 15m 44s.xml">
       <configuration name="ProductFamilySelectionTest.selectProduct_returnsProductDataRequested_whenMissingData" configurationId="JUnit" />
     </history-entry>
@@ -417,9 +428,24 @@
     <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 14h 20m 44s.xml">
       <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 15h 09m 33s.xml">
+      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 15h 12m 50s.xml">
+      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductFamilySelectionTest_buildAggregateFromHistory_returnsAggregate - 2019.10.16 at 15h 13m 21s.xml">
+      <configuration name="ProductFamilySelectionTest.buildAggregateFromHistory_returnsAggregate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductFamilySelectionTest_buildAggregateFromHistory_returnsAggregate - 2019.10.16 at 15h 13m 53s.xml">
+      <configuration name="ProductFamilySelectionTest.buildAggregateFromHistory_returnsAggregate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductFamilySelectionTest - 2019.10.16 at 15h 13m 59s.xml">
+      <configuration name="ProductFamilySelectionTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9485000" />
+    <option name="totallyTimeSpent" value="9955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -430,7 +456,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -440,7 +466,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5102041" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5092091" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -522,17 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductSelected.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductFamilyDefined.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -580,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/ProductUnselected.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -601,7 +609,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductDataRequested.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#232#233#0" expanded="true" />
             <element signature="e#274#275#0" expanded="true" />
@@ -626,26 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#578#579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="80" column="71" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -653,10 +641,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/command/SelectProductCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/event/ProductSelected.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="152">
+          <caret line="64" column="84" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#399#400#0" expanded="true" />
