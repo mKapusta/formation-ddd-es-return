@@ -4,6 +4,7 @@ import com.company.domain.event.*;
 
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 public class DecisionProjection {
 
@@ -52,5 +53,9 @@ public class DecisionProjection {
 
     public boolean allProductsFull(){
         return selectProduct.stream().anyMatch(Product::isFull);
+    }
+
+    public Set<ProductId> getProductsId() {
+        return selectProduct.stream().map(product -> product.productId).collect(Collectors.toSet());
     }
 }

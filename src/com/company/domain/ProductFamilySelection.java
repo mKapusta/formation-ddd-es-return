@@ -59,7 +59,7 @@ public class ProductFamilySelection {
         if (decisionProjection.isEmpty() || !decisionProjection.allProductsFull()) {
             return Optional.empty();
         }
-        ProductFamilyDefined event = new ProductFamilyDefined();
+        ProductFamilyDefined event = new ProductFamilyDefined(decisionProjection.getProductsId());
         decisionProjection.apply(event);
         return Optional.of(event);
     }
