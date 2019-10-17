@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class InMemoryEventStoreTest {
 
@@ -13,7 +14,7 @@ class InMemoryEventStoreTest {
     void returnEvent_whenEventStored() throws NumeroDeSequenceInvalide {
         // given
         var eventStore = new InMemoryEventStore<String, DumbEvent>();
-        eventStore.addEvent("", new DumbEvent("Ouii"));
+        eventStore.addEvent("", new DumbEvent("Ouii"), 0);
 
         // when
         List<DumbEvent> events = eventStore.getEvents();
@@ -26,8 +27,8 @@ class InMemoryEventStoreTest {
     void returnEvents_whenEventsStored() throws NumeroDeSequenceInvalide {
         // given
         var eventStore = new InMemoryEventStore<String, DumbEvent>();
-        eventStore.addEvent("", new DumbEvent("Ouii"));
-        eventStore.addEvent("", new DumbEvent("Noon"));
+        eventStore.addEvent("", new DumbEvent("Ouii"), 0);
+        eventStore.addEvent("", new DumbEvent("Noon"), 1);
 
         // when
         List<DumbEvent> events = eventStore.getEvents();
@@ -40,8 +41,8 @@ class InMemoryEventStoreTest {
     void returnEventsFromOneAggregate_whenMultipleAggregates() throws NumeroDeSequenceInvalide {
         // given
         var eventStore = new InMemoryEventStore<String, DumbEvent>();
-        eventStore.addEvent("A", new DumbEvent("Ouii"));
-        eventStore.addEvent("B", new DumbEvent("Noon"));
+        eventStore.addEvent("A", new DumbEvent("Ouii"), 0);
+        eventStore.addEvent("B", new DumbEvent("Noon"), 0);
 
         // when
         List<DumbEvent> events = eventStore.getEvents("A");
@@ -54,8 +55,8 @@ class InMemoryEventStoreTest {
     void returnEventsFromSecondAggregate_whenMultipleAggregates() throws NumeroDeSequenceInvalide {
         // given
         var eventStore = new InMemoryEventStore<String, DumbEvent>();
-        eventStore.addEvent("A", new DumbEvent("Ouii"));
-        eventStore.addEvent("B", new DumbEvent("Noon"));
+        eventStore.addEvent("A", new DumbEvent("Ouii"), 0);
+        eventStore.addEvent("B", new DumbEvent("Noon"), 0);
 
         // when
         List<DumbEvent> events = eventStore.getEvents("B");
@@ -64,7 +65,20 @@ class InMemoryEventStoreTest {
         assertEquals(List.of(new DumbEvent("Noon")), events);
     }
 
-    // TODO: event sequence tests
+    @Test
+    void throwsNumeroDeSequenceInvalide_whenWrongSequenceNumber() throws NumeroDeSequenceInvalide {
+        // given
+        var eventStore = new InMemoryEventStore<String, DumbEvent>();
+        eventStore.addEvent("A", new DumbEvent("Ouii"), 0);
+
+        // then
+        assertThrows(
+                NumeroDeSequenceInvalide.class,
+                () -> {
+                    eventStore.addEvent("B", new DumbEvent("Noon"), 1);
+                }
+        );
+    }
 
     private class DumbEvent {
         private final String name;

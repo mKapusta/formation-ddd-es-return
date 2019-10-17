@@ -22,15 +22,17 @@ public class EventPublisher<K, V> {
         this.eventHandlers = eventHandlers;
     }
 
-    public void publishEvent(K key, V event) throws NumeroDeSequenceInvalide {
-        eventStore.addEvent(key, event);
+    public void publishEvent(K key, V event, int sequenceNumber) throws NumeroDeSequenceInvalide {
+        eventStore.addEvent(key, event, sequenceNumber);
         eventHandlers.forEach(handler -> handler.handleEvent(key, event));
     }
 
 
-    public void publishEvents(K key, List<V> events) throws NumeroDeSequenceInvalide {
+    public void publishEvents(K key, List<V> events, int sequenceNumber) throws NumeroDeSequenceInvalide {
+        int currentSequenceNumber = sequenceNumber;
         for(V event : events){
-            this.publishEvent(key, event);
+            this.publishEvent(key, event, currentSequenceNumber);
+            currentSequenceNumber++;
         }
     }
 }

@@ -10,16 +10,19 @@ public class InMemoryEventStore<K, V> implements EventStore<K, V> {
     Map<K, List<V>> events = new HashMap<>();
 
     @Override
-    public void addEvent(K id, V event) throws NumeroDeSequenceInvalide {
+    public void addEvent(K id, V event, int sequenceNumber) throws NumeroDeSequenceInvalide {
+        if (getEvents(id).size() != sequenceNumber) {
+            throw new NumeroDeSequenceInvalide();
+        }
         List<V> events = getEvents(id);
         events.add(event);
         this.events.put(id, events);
     }
 
     @Override
-    public void addEvents(K id, List<V> events) throws NumeroDeSequenceInvalide {
+    public void addEvents(K id, List<V> events, int sequenceNumber) throws NumeroDeSequenceInvalide {
         for(var event : events ) {
-            this.addEvent(id, event);
+            this.addEvent(id, event, sequenceNumber);
         }
     }
 

@@ -23,7 +23,7 @@ class EventPublisherTest {
         EventStore<String, ProductFamilyEvent> eventStore = new InMemoryEventStore<>();
         ProductSelected event = new ProductSelected(new ProductId("A"));
         EventPublisher<String, ProductFamilyEvent> eventPublisher = new EventPublisher<>(eventStore, new MockEventHandler());
-        eventPublisher.publishEvent("", event);
+        eventPublisher.publishEvent("", event, 0);
         assertEquals(event, eventStore.getEvents().get(0));
     }
 
@@ -34,7 +34,7 @@ class EventPublisherTest {
         ProductSelected eventSelect = new ProductSelected(new ProductId("A"));
         ProductUnselected eventUnselect = new ProductUnselected(new ProductId("A"));
 
-        eventPublisher.publishEvents("", List.of(eventSelect, eventUnselect));
+        eventPublisher.publishEvents("", List.of(eventSelect, eventUnselect), 0);
 
         assertEquals(eventSelect, eventStore.getEvents().get(0));
         assertEquals(eventUnselect, eventStore.getEvents().get(1));
@@ -47,7 +47,7 @@ class EventPublisherTest {
         EventPublisher<String, ProductFamilyEvent> eventPublisher = new EventPublisher<>(eventStore, eventHandler);
 
         ProductSelected eventSelect = new ProductSelected(new ProductId("A"));
-        eventPublisher.publishEvent("", eventSelect);
+        eventPublisher.publishEvent("", eventSelect, 0);
 
         assertTrue(eventHandler.called);
         assertEquals(1, eventHandler.callCount);
@@ -64,7 +64,7 @@ class EventPublisherTest {
         ProductSelected eventSelect = new ProductSelected(new ProductId("A"));
         ProductUnselected eventUnselect = new ProductUnselected(new ProductId("A"));
 
-        eventPublisher.publishEvents("", List.of(eventSelect, eventUnselect));
+        eventPublisher.publishEvents("A", List.of(eventSelect, eventUnselect), 0);
 
         assertTrue(eventHandler.called);
         assertEquals(2, eventHandler.callCount);
@@ -79,7 +79,7 @@ class EventPublisherTest {
         EventPublisher<String, ProductFamilyEvent> eventPublisher = new EventPublisher<>(eventStore, List.of(firstEventHandler, secondEventHandler));
 
         ProductSelected eventSelect = new ProductSelected(new ProductId("A"));
-        eventPublisher.publishEvent("", eventSelect);
+        eventPublisher.publishEvent("", eventSelect, 0);
 
 
         assertTrue(firstEventHandler.called);

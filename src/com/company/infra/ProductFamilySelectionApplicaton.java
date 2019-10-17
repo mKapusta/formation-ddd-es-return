@@ -22,12 +22,13 @@ public class ProductFamilySelectionApplicaton {
     }
 
     public void selectProduct(String idFamille, SelectProductCommand selectProductCommand) throws NumeroDeSequenceInvalide {
-        var productFamilySelection = new ProductFamilySelection(eventStore.getEvents(idFamille));
+        List<ProductFamilyEvent> productFamilyEvents = eventStore.getEvents(idFamille);
+        var productFamilySelection = new ProductFamilySelection(productFamilyEvents);
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
 
         // TODO : Comparer le numéro de séq dans l'event store
 
-        eventPublisher.publishEvents(idFamille, events);
+        eventPublisher.publishEvents(idFamille, events, productFamilyEvents.size());
     }
 }
