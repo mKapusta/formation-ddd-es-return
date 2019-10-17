@@ -65,9 +65,6 @@ public class ProductFamilySelection {
         return Optional.of(event);
     }
 
-    public boolean selectProductContainsProduct(ProductId productId){
-        return decisionProjection.selectProductContainsProduct(productId);
-    }
 
     public Optional<ProductDataReceived> receiveData(ReceiveProductData receiveProductData) {
         ProductDataReceived productDataReceived = new ProductDataReceived(receiveProductData.productId, receiveProductData.productName, receiveProductData.productPicture);

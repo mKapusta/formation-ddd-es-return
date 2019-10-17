@@ -19,8 +19,8 @@ public class EventPublisher<T> {
     }
 
     public void publishEvent(T event) {
-        eventHandlers.forEach(handler -> handler.handleEvent(event));
         eventStore.addEvent(event);
+        eventHandlers.forEach(handler -> handler.handleEvent(event));
     }
 
 
