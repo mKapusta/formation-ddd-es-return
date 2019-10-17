@@ -12,15 +12,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -45,25 +36,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="255">
               <caret line="15" selection-start-line="15" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+            <state relative-caret-position="68">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="e#445#446#0" expanded="true" />
                 <element signature="e#490#491#0" expanded="true" />
@@ -88,19 +63,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
+            <state relative-caret-position="289">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,9 +143,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -173,10 +188,14 @@
         <option value="$PROJECT_DIR$/src/com/company/domain/DecisionHistoryProjection.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/DashboardProjection.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/ProductFamily.java" />
-        <option value="$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/DashboardProjection.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/EventStore.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java" />
       </list>
     </option>
   </component>
@@ -256,24 +275,25 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571297728985" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571301739335" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kevin/Examen/todo-part2" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.company.infra" />
       <recent name="com.company.domain" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.company.domain" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.domain" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.company.domain.event" />
@@ -293,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DashboardProjectionTest">
+  <component name="RunManager" selected="JUnit.EventPublisherTest">
     <configuration name="DashboardProjectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
@@ -305,22 +325,6 @@
       <option name="PACKAGE_NAME" value="com.company.infra" />
       <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DashboardProjectionTest.shouldGetOneFamily" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SupportCom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.infra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
-      <option name="METHOD_NAME" value="shouldGetOneFamily" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,7 +345,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashboardProjectionTest.startsWithEmptyDashboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EventPublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
@@ -350,8 +354,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.DashboardProjectionTest" />
-      <option name="METHOD_NAME" value="startsWithEmptyDashboard" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.EventPublisherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventPublisherTest.storeMultipleEvents_whenMultipleEvents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SupportCom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.infra" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.EventPublisherTest" />
+      <option name="METHOD_NAME" value="storeMultipleEvents_whenMultipleEvents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -376,19 +395,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DashboardProjectionTest.startsWithEmptyDashboard" />
       <item itemvalue="JUnit.DashboardProjectionTest" />
-      <item itemvalue="JUnit.DashboardProjectionTest.shouldGetOneFamily" />
       <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.company.infra.DashboardProjectionTest]" />
       <item itemvalue="JUnit.DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" />
+      <item itemvalue="JUnit.EventPublisherTest" />
+      <item itemvalue="JUnit.EventPublisherTest.storeMultipleEvents_whenMultipleEvents" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventPublisherTest" />
+        <item itemvalue="JUnit.EventPublisherTest.storeMultipleEvents_whenMultipleEvents" />
         <item itemvalue="JUnit.DashboardProjectionTest" />
         <item itemvalue="JUnit.DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" />
         <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.company.infra.DashboardProjectionTest]" />
-        <item itemvalue="JUnit.DashboardProjectionTest.shouldGetOneFamily" />
-        <item itemvalue="JUnit.DashboardProjectionTest.startsWithEmptyDashboard" />
       </list>
     </recent_temporary>
   </component>
@@ -407,39 +426,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DashboardProjectionTest_shouldGetOneFamily - 2019.10.16 at 16h 59m 41s.xml">
-      <configuration name="DashboardProjectionTest.shouldGetOneFamily" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 13m 57s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 00m 37s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 17m 42s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 01m 32s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 23m 29s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 13m 32s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 24m 24s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest_(1) - 2019.10.16 at 17h 15m 54s.xml">
-      <configuration name="DashboardProjectionTest (1)" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 25m 10s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest_(1) - 2019.10.16 at 17h 16m 46s.xml">
-      <configuration name="DashboardProjectionTest (1)" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest_storeMultipleEvents_whenMultipleEvents - 2019.10.17 at 10h 25m 32s.xml">
+      <configuration name="EventPublisherTest.storeMultipleEvents_whenMultipleEvents" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 17m 34s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 32m 02s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest_shouldRemoveProductFromOneFamilyAmongTwo - 2019.10.16 at 17h 17m 46s.xml">
-      <configuration name="DashboardProjectionTest.shouldRemoveProductFromOneFamilyAmongTwo" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 36m 43s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 17m 58s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 38m 18s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DashboardProjectionTest - 2019.10.16 at 17h 20m 19s.xml">
-      <configuration name="DashboardProjectionTest" configurationId="JUnit" />
+    <history-entry file="EventPublisherTest - 2019.10.17 at 10h 42m 01s.xml">
+      <configuration name="EventPublisherTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17594000" />
+    <option name="totallyTimeSpent" value="19675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +473,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -463,7 +482,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5092091" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27193934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,6 +506,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -685,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -712,9 +743,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
+        <state relative-caret-position="861">
           <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -722,22 +764,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        <state relative-caret-position="68">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="e#445#446#0" expanded="true" />
             <element signature="e#490#491#0" expanded="true" />
             <element signature="e#1062#1063#0" expanded="true" />
             <element signature="e#1104#1105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
           </folding>
         </state>
       </provider>

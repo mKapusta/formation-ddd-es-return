@@ -13,7 +13,7 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-class DashboardProjectionTest {
+class DashboardEventHandlerTest {
 
     @Test
     public void startsWithEmptyDashboard() {
