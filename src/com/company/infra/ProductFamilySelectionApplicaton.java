@@ -27,8 +27,6 @@ public class ProductFamilySelectionApplicaton {
 
         List<ProductFamilyEvent> events = productFamilySelection.selectProduct(selectProductCommand);
 
-        // TODO : Comparer le numéro de séq dans l'event store
-
         eventPublisher.publishEvents(idFamille, events, productFamilyEvents.size());
     }
 }

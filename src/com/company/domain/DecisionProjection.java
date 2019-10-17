@@ -11,16 +11,18 @@ public class DecisionProjection {
     private Set<Product> selectProduct = new HashSet<>();
     private Map<Class, Consumer<ProductFamilyEvent>> eventClassMapping =
             Map.of(ProductSelected.class, event -> apply((ProductSelected) event),
-            //FIXME a supprimer
-            com.company.domain.event.ProductUnselected.class, event -> apply((com.company.domain.event.ProductUnselected) event),
             com.company.domain.event.ProductDataRequested.class, event -> apply((com.company.domain.event.ProductDataRequested) event),
             com.company.domain.event.ProductDataReceived.class, event -> apply((com.company.domain.event.ProductDataReceived) event));
 
 
     public DecisionProjection(List<ProductFamilyEvent> events){
 
-        //FIXME Verifier existence event avant appel
-        events.forEach(event -> eventClassMapping.get(event.getClass()).accept(event));
+        events.forEach(event -> {
+            Consumer<ProductFamilyEvent> productFamilyEventConsumer = eventClassMapping.get(event.getClass());
+            if (productFamilyEventConsumer != null) {
+                productFamilyEventConsumer.accept(event);
+            }
+        });
     }
 
     public DecisionProjection() {

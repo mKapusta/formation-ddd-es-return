@@ -54,8 +54,6 @@ class EventPublisherTest {
 
     }
 
-    //TODO : CREER TEST POUR EXCEPTION
-
     @Test
     public void callHandler_whenPublishMultipleEvents() throws NumeroDeSequenceInvalide {
         EventStore<String, ProductFamilyEvent> eventStore = new InMemoryEventStore<>();
