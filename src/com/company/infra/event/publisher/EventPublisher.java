@@ -1,4 +1,7 @@
-package com.company.infra;
+package com.company.infra.event.publisher;
+
+import com.company.infra.event.handler.EventHandler;
+import com.company.infra.event.store.EventStore;
 
 import java.util.List;
 

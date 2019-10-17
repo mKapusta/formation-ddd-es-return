@@ -3,6 +3,7 @@ package com.company.infra;
 import com.company.domain.ProductFamilySelection;
 import com.company.domain.command.SelectProductCommand;
 import com.company.domain.event.ProductFamilyEvent;
+import com.company.infra.event.publisher.EventPublisher;
 
 import java.util.List;
 import java.util.stream.Collectors;

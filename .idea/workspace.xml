@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d58890-6226-4a50-ba90-ae54e2a1185c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/DashboardEventHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/handler/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/EventStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/event/store/EventStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/infra/ProductFamilySelectionApplicaton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/infra/ProductFamilySelectionApplicaton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,28 +40,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisher.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="214">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/EventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -72,47 +91,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventStore.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/store/EventStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="37" column="5" selection-start-line="17" selection-start-column="1" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="657">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#858#859#0" expanded="true" />
@@ -126,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/infra/ProductFamilySelectionApplicaton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="463">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,10 +197,10 @@
         <option value="$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/FamilyIdEvent.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/ProductFamilySelectionApplicaton.java" />
-        <option value="$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/ProductFamilySelection.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/DecisionProjection.java" />
         <option value="$PROJECT_DIR$/src/com/company/infra/EventPublisher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java" />
       </list>
     </option>
   </component>
@@ -273,6 +276,15 @@
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="infra" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SupportCom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SupportCom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="infra" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +298,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571304488280" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571305531873" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -341,12 +353,12 @@
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="PATTERN" value="com.company.infra.event.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.EventPublisherTest" />
+      <option name="PACKAGE_NAME" value="com.company.infra.event.publisher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.event.publisher.EventPublisherTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -356,43 +368,43 @@
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="PATTERN" value="com.company.infra.event.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.EventPublisherTest" />
+      <option name="PACKAGE_NAME" value="com.company.infra.event.publisher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.event.publisher.EventPublisherTest" />
       <option name="METHOD_NAME" value="storeMultipleEvents_whenMultipleEvents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductFamilySelectionApplicatonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="PATTERN" value="com.company.infra.event.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.IntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.ProductFamilySelectionApplicatonTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.updateProjection_whenSendCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductFamilySelectionApplicatonTest.updateProjection_whenSendCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SupportCom" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.infra.*" />
+          <option name="PATTERN" value="com.company.infra.event.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company.infra" />
-      <option name="MAIN_CLASS_NAME" value="com.company.infra.IntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.company.infra.ProductFamilySelectionApplicatonTest" />
       <option name="METHOD_NAME" value="updateProjection_whenSendCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -402,16 +414,16 @@
     <list>
       <item itemvalue="JUnit.EventPublisherTest" />
       <item itemvalue="JUnit.EventPublisherTest.storeMultipleEvents_whenMultipleEvents" />
-      <item itemvalue="JUnit.IntegrationTest.updateProjection_whenSendCommand" />
-      <item itemvalue="JUnit.IntegrationTest" />
+      <item itemvalue="JUnit.ProductFamilySelectionApplicatonTest.updateProjection_whenSendCommand" />
+      <item itemvalue="JUnit.ProductFamilySelectionApplicatonTest" />
       <item itemvalue="JUnit.All in SupportCom" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in SupportCom" />
-        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.ProductFamilySelectionApplicatonTest" />
         <item itemvalue="JUnit.EventPublisherTest" />
-        <item itemvalue="JUnit.IntegrationTest.updateProjection_whenSendCommand" />
+        <item itemvalue="JUnit.ProductFamilySelectionApplicatonTest.updateProjection_whenSendCommand" />
         <item itemvalue="JUnit.EventPublisherTest.storeMultipleEvents_whenMultipleEvents" />
       </list>
     </recent_temporary>
@@ -427,7 +439,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571217022660</updated>
       <workItem from="1571217026975" duration="17491000" />
-      <workItem from="1571303724683" duration="759000" />
+      <workItem from="1571303724683" duration="1570000" />
     </task>
     <servers />
   </component>
@@ -464,7 +476,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22363000" />
+    <option name="totallyTimeSpent" value="23174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +489,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -518,8 +529,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisherTest.java</url>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -710,16 +721,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardProjectionTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/FamilyIdEvent.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -735,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="5" selection-start-line="17" selection-start-column="1" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -756,13 +747,6 @@
             <element signature="e#1188#1189#0" expanded="true" />
             <element signature="e#1234#1235#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -788,45 +772,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/EventPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/ProductFamilySelectionApplicaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/infra/DashboardEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/infra/IntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="657">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#858#859#0" expanded="true" />
             <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/DashboardEventHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/handler/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/store/EventStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/infra/event/publisher/EventPublisherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

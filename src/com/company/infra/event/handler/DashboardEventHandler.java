@@ -1,6 +1,7 @@
-package com.company.infra;
+package com.company.infra.event.handler;
 
 import com.company.domain.event.*;
+import com.company.infra.FamilyIdEvent;
 
 import java.util.HashMap;
 import java.util.Map;

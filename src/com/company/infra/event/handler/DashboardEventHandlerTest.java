@@ -1,4 +1,4 @@
-package com.company.infra;
+package com.company.infra.event.handler;
 
 import com.company.domain.ProductId;
 import com.company.domain.event.ProductFamilyDefined;
