@@ -17,14 +17,14 @@ class DashboardProjectionTest {
 
     @Test
     public void startsWithEmptyDashboard() {
-        DashboardProjection dashboardProjection = new DashboardProjection();
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler();
 
         assertEquals(Map.of(), dashboardProjection.getFamilies());
     }
 
     @Test
     public void shouldGetOneProductInFamily() {
-        DashboardProjection dashboardProjection = new DashboardProjection();
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler();
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductSelected(productId));
 
@@ -33,7 +33,7 @@ class DashboardProjectionTest {
 
     @Test
     public void shouldGetTwoProductInOnefamily() {
-        DashboardProjection dashboardProjection = new DashboardProjection();
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler();
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductSelected(productId));
         dashboardProjection.apply("familleA", new ProductSelected(new ProductId("B")));
@@ -43,7 +43,7 @@ class DashboardProjectionTest {
 
     @Test
     public void shouldGetTwoProductInTwofamilies() {
-        DashboardProjection dashboardProjection = new DashboardProjection();
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler();
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductSelected(productId));
         dashboardProjection.apply("familleB", new ProductSelected(new ProductId("B")));
@@ -56,7 +56,7 @@ class DashboardProjectionTest {
     public void shouldRemoveProductFromOneFamily(){
         HashMap families = new HashMap();
         families.put("familleA", 5);
-        DashboardProjection dashboardProjection = new DashboardProjection(families);
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler(families);
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductUnselected(productId));
 
@@ -68,7 +68,7 @@ class DashboardProjectionTest {
         HashMap families = new HashMap();
         families.put("familleA", 5);
         families.put("familleB", 3);
-        DashboardProjection dashboardProjection = new DashboardProjection(families);
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler(families);
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductUnselected(productId));
 
@@ -81,7 +81,7 @@ class DashboardProjectionTest {
         HashMap families = new HashMap();
         families.put("familleA", 5);
         families.put("familleB", 3);
-        DashboardProjection dashboardProjection = new DashboardProjection(families);
+        DashboardEventHandler dashboardProjection = new DashboardEventHandler(families);
         ProductId productId = new ProductId("A");
         dashboardProjection.apply("familleA", new ProductFamilyDefined(Set.of(productId)));
 
