@@ -1,6 +1,6 @@
 package com.company.infra.event.handler;
 
-public interface EventHandler<T> {
+public interface EventHandler<K, V> {
 
-    void handleEvent(T event);
+    void handleEvent(K key, V event);
 }

@@ -1,20 +1,19 @@
 package com.company.infra.event.handler;
 
 import com.company.domain.event.*;
-import com.company.infra.FamilyIdEvent;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Consumer;
+import java.util.function.BiConsumer;
 
-public class DashboardEventHandler implements EventHandler<FamilyIdEvent> {
+public class DashboardEventHandler implements EventHandler<String, ProductFamilyEvent> {
 
     //Peut être dans une classe specifique
+    private Map<Class, BiConsumer<String, ProductFamilyEvent>> eventClassMapping = Map.of(ProductSelected.class, (familyId,event) -> apply(familyId, (ProductSelected) event),
+            com.company.domain.event.ProductUnselected.class, (familyId,event)  -> apply(familyId,(com.company.domain.event.ProductUnselected) event),
+            com.company.domain.event.ProductDataRequested.class, (familyId,event)  -> apply(familyId,(com.company.domain.event.ProductDataRequested) event),
+            com.company.domain.event.ProductDataReceived.class, (familyId,event)  -> apply(familyId,(com.company.domain.event.ProductDataReceived) event));
     private Map<String, Integer> productFamiliesRepository = new HashMap<>();
-    private Map<Class, Consumer<FamilyIdEvent>> eventClassMapping = Map.of(ProductSelected.class, (familyIdEvent) -> apply(familyIdEvent.familyId, (ProductSelected) familyIdEvent.event),
-            com.company.domain.event.ProductUnselected.class, (familyIdEvent) -> apply(familyIdEvent.familyId,(com.company.domain.event.ProductUnselected) familyIdEvent.event),
-            com.company.domain.event.ProductDataRequested.class, (familyIdEvent) -> apply(familyIdEvent.familyId,(com.company.domain.event.ProductDataRequested) familyIdEvent.event),
-            com.company.domain.event.ProductDataReceived.class, (familyIdEvent) -> apply(familyIdEvent.familyId,(com.company.domain.event.ProductDataReceived) familyIdEvent.event));
 
     private void apply(String id, ProductDataReceived event) {
 
@@ -54,7 +53,7 @@ public class DashboardEventHandler implements EventHandler<FamilyIdEvent> {
     }
 
     @Override
-    public void handleEvent(FamilyIdEvent familyIdEvent) {
-        eventClassMapping.get(familyIdEvent.event.getClass()).accept(familyIdEvent);
+    public void handleEvent(String idFamille, ProductFamilyEvent productFamilyEvent) {
+        eventClassMapping.get(productFamilyEvent.getClass()).accept(idFamille, productFamilyEvent);
     }
 }
