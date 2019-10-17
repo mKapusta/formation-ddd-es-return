@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 public class DecisionProjection {
 
     private Set<Product> selectProduct = new HashSet<>();
-    private Map<Class, Consumer<ProductFamilyEvent>> eventClassMapping = Map.of(ProductSelected.class, event -> apply((ProductSelected) event),
+    private Map<Class, Consumer<ProductFamilyEvent>> eventClassMapping =
+            Map.of(ProductSelected.class, event -> apply((ProductSelected) event),
             com.company.domain.event.ProductUnselected.class, event -> apply((com.company.domain.event.ProductUnselected) event),
             com.company.domain.event.ProductDataRequested.class, event -> apply((com.company.domain.event.ProductDataRequested) event),
             com.company.domain.event.ProductDataReceived.class, event -> apply((com.company.domain.event.ProductDataReceived) event));
